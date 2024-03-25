@@ -4,6 +4,7 @@ mod types;
 mod flow;
 mod oops;
 mod standard;
+mod own_borrow;
 
 fn main() {
   println!("Hello World!");
@@ -26,4 +27,7 @@ fn main() {
   standard::hash_maps();
   standard::options();
   standard::results();
+
+  own_borrow::borrow();
+  own_borrow::concepts();
 }
