@@ -9,6 +9,7 @@
 5. Ownership and Borrowing
 6. Structs, impl, Associated Function vs Methods - static / &self
 7. Enums, Option, match and if-let
+8. Packages, Crates (Library/Binary) and Modules
 
 ### Setup
 
