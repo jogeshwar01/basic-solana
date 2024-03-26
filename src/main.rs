@@ -5,6 +5,8 @@ mod flow;
 mod oops;
 mod standard;
 mod own_borrow;
+mod structs;
+mod enums;
 
 fn main() {
   println!("Hello World!");
@@ -30,4 +32,7 @@ fn main() {
 
   own_borrow::borrow();
   own_borrow::concepts();
+
+  structs::get_area();
+  enums::enum_concepts();
 }

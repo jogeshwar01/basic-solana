@@ -5,9 +5,10 @@
 1. Functions
 2. Types
 3. Flow Control Statements
-4. OOPS
-5. Standard - Vectors, Maps, Option, Result 
-6. Ownership and Borrowing
+4. Standard - Vectors, Maps, Option, Result
+5. Ownership and Borrowing
+6. Structs, impl, Associated Function vs Methods - static / &self
+7. Enums, Option, match and if-let
 
 ### Setup
 

@@ -42,6 +42,11 @@ pub fn concepts() {
   // println!("x: {}", x); // ERROR: x not in scope
 
   // ----move
+  #[derive(Debug)]
+  struct Person {
+    age: u8,
+  }
+
   let a = vec![1, 2, 3]; // a growable array literal
   let b = a;             // move: `a` can no longer be used
 
@@ -51,5 +56,5 @@ pub fn concepts() {
   let alice = Person { age: 8 };
   let bob = &alice; // bob borrows alice
 
-  println!("alice: {:?}\nbob: {:?}", alice, bob);
+  println!("alice: {:?}\nbob: {}", alice, bob.age);
 }
