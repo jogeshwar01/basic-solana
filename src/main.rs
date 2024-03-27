@@ -7,6 +7,8 @@ mod standard;
 mod own_borrow;
 mod structs;
 mod enums;
+mod collections;
+mod error;
 
 fn main() {
   println!("Hello World!");
@@ -35,4 +37,10 @@ fn main() {
 
   structs::get_area();
   enums::enum_concepts();
+
+  collections::vectors();
+  collections::strings();
+  collections::hash_maps();
+
+  error::error_handling();
 }
