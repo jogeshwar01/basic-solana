@@ -16,6 +16,7 @@ https://doc.rust-lang.org/book/
 8. Collections - Vectors, Strings and Hash Maps
 9. Error handling - panic, unwrap, expect, ?, parse
 10. Generics, Traits and Lifetimes
+11. Tests - assert (eq,ne), panic, cargo test commands
 
 ### Setup
 
