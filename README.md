@@ -1,5 +1,9 @@
 # Basics of Rust
 
+#### Reference
+
+https://doc.rust-lang.org/book/
+
 ### Concepts
 
 1. Functions
@@ -11,6 +15,7 @@
 7. Packages, Crates (Library/Binary) and Modules
 8. Collections - Vectors, Strings and Hash Maps
 9. Error handling - panic, unwrap, expect, ?, parse
+10. Generics, Traits and Lifetimes
 
 ### Setup
 

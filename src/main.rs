@@ -9,6 +9,7 @@ mod structs;
 mod enums;
 mod collections;
 mod error;
+mod chapter10;
 
 fn main() {
   println!("Hello World!");
@@ -43,4 +44,6 @@ fn main() {
   collections::hash_maps();
 
   error::error_handling();
+
+  chapter10::chapter10();
 }
