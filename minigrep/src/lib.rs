@@ -27,33 +27,41 @@ pub struct Config {
 }
 
 impl Config {
-  pub fn new(args: &[String]) -> Result<Config, &str> {
-      if args.len() < 3 {
-          return Err("not enough arguments");
-      }
+  // need to specify the lifetime of the string slice returned by env::Args
+  // earlier we were able to use &str without specifying the lifetime because we had a reference to a string slice and the return values got their lifetime from the reference
+  // here we are returning a string slice directly ie. owned, so we need to specify the lifetime
+  // static lifetime is the lifetime of the entire program
+  pub fn new(mut args: env::Args) -> Result<Config, &'static str> {
+    args.next();
 
-      let query = args[1].clone(); // clone is a bit of a hack for now as we need a String for struct and not a &str
-      let file_path = args[2].clone();
-      let ignore_case = env::var("IGNORE_CASE").is_ok();  // is_ok() converts the Result to a boolean
+    let query = match args.next() {
+        Some(arg) => arg,
+        None => return Err("Didn't get a query string"),
+    };
 
-      Ok(Config {
-          query,
-          file_path,
-          ignore_case,
-      })
+    let file_path = match args.next() {
+        Some(arg) => arg,
+        None => return Err("Didn't get a file path"),
+    };
+
+    let ignore_case = env::var("IGNORE_CASE").is_ok();
+
+    Ok(Config {
+        query,
+        file_path,
+        ignore_case,
+    })
   }
 }
 
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-  let mut results = Vec::new();
-
-    for line in contents.lines() {
-        if line.contains(query) {
-            results.push(line);
-        }
-    }
-
-    results
+  // .lines() returns an iterator over the lines of the string
+  // .filter() creates an iterator that only yields elements of the input iterator that satisfy a specified condition
+  // .collect() consumes the iterator and collects the resulting values into a collection
+  contents
+  .lines()
+  .filter(|line| line.contains(query))
+  .collect()
 }
 
 pub fn search_case_insensitive<'a>(query: &str, contents: &'a str,) -> Vec<&'a str> {

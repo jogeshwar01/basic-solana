@@ -3,9 +3,8 @@ use::std::process;
 use::minigrep::Config;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-
-    let config = Config::new(&args).unwrap_or_else(|err| { // this is a closure that takes an error and returns a value
+    // args() returns an iterator of the command line arguments that were given to the program
+    let config = Config::new(env::args()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {err}");
         process::exit(1);
     });

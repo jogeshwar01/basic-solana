@@ -18,6 +18,7 @@ https://doc.rust-lang.org/book/
 10. Generics, Traits and Lifetimes
 11. Tests - assert (eq,ne), panic, cargo test commands, unit/integration tests
 12. Minigrep - CLI program - fs module, TDD, env vars, eprintln!
+13. Closures (Memoization Pattern, Capture Environment), Iterators (Adaptor and Consumer functions)
 
 ### Setup
 

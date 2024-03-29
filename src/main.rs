@@ -10,6 +10,7 @@ mod enums;
 mod collections;
 mod error;
 mod chapter10;
+mod chapter13;
 
 fn main() {
   println!("Hello World!");
@@ -46,4 +47,5 @@ fn main() {
   error::error_handling();
 
   chapter10::chapter10();
+  chapter13::chapter13();
 }
