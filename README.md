@@ -19,6 +19,7 @@ https://doc.rust-lang.org/book/
 11. Tests - assert (eq,ne), panic, cargo test commands, unit/integration tests
 12. Minigrep - CLI program - fs module, TDD, env vars, eprintln!
 13. Closures (Memoization Pattern, Capture Environment), Iterators (Adaptor and Consumer functions)
+14. Crates, Release Profiles (dev/release), Crates.io (Doc Comments, pub use export), Cargo workspaces
 
 ### Setup
 

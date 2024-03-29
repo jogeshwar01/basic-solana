@@ -1,9 +1,16 @@
-workspace = { members = [ "minigrep", "my_crates","src/tests-example"] }
 [package]
-name = "rust-basics"
+name = "my_crates"
 version = "0.1.0"
 edition = "2021"
+description = "A library to understand crates.io"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
