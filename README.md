@@ -20,6 +20,7 @@ https://doc.rust-lang.org/book/
 12. Minigrep - CLI program - fs module, TDD, env vars, eprintln!
 13. Closures (Memoization Pattern, Capture Environment), Iterators (Adaptor and Consumer functions)
 14. Crates, Release Profiles (dev/release), Crates.io (Doc Comments, pub use export), Cargo workspaces
+15. Smart Pointers - Box, Deref, Drop, Reference Counting, Interior Mutability, Reference Cycles (Weak Pointers)
 
 ### Setup
 
