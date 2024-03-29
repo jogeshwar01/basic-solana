@@ -1,6 +1,5 @@
-workspace = { members = [ "minigrep","src/tests-example"] }
 [package]
-name = "rust-basics"
+name = "minigrep"
 version = "0.1.0"
 edition = "2021"
 
