@@ -21,6 +21,7 @@ https://doc.rust-lang.org/book/
 13. Closures (Memoization Pattern, Capture Environment), Iterators (Adaptor and Consumer functions)
 14. Crates, Release Profiles (dev/release), Crates.io (Doc Comments, pub use export), Cargo workspaces
 15. Smart Pointers - Box, Deref, Drop, Reference Counting, Interior Mutability, Reference Cycles (Weak Pointers)
+16. Fearless Concurrency - Threads, Message Passing (Channels - mpsc), Sharing state (Mutex, Arc)
 
 ### Setup
 
