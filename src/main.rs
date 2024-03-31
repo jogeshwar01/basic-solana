@@ -13,6 +13,7 @@ mod chapter10;
 mod chapter13;
 mod chapter15;
 mod chapter16;
+mod chapter17;
 
 fn main() {
   println!("Hello World!");
@@ -52,4 +53,5 @@ fn main() {
   chapter13::chapter13();
   chapter15::chapter15();
   chapter16::chapter16();
+  chapter17::chapter17();
 }

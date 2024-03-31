@@ -22,6 +22,7 @@ https://doc.rust-lang.org/book/
 14. Crates, Release Profiles (dev/release), Crates.io (Doc Comments, pub use export), Cargo workspaces
 15. Smart Pointers - Box, Deref, Drop, Reference Counting, Interior Mutability, Reference Cycles (Weak Pointers)
 16. Fearless Concurrency - Threads, Message Passing (Channels - mpsc), Sharing state (Mutex, Arc)
+17. Object oriented Programming - Objects, Encapsulation, Inheritance, Trait Objects, State Design Pattern
 
 ### Setup
 
