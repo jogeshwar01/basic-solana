@@ -23,6 +23,7 @@ https://doc.rust-lang.org/book/
 15. Smart Pointers - Box, Deref, Drop, Reference Counting, Interior Mutability, Reference Cycles (Weak Pointers)
 16. Fearless Concurrency - Threads, Message Passing (Channels - mpsc), Sharing state (Mutex, Arc)
 17. Object oriented Programming - Objects, Encapsulation, Inheritance, Trait Objects, State Design Pattern
+18. Patterns and Matching - Refutable/Irrefutable, match, destructure, ignoring with _, range, match guards, @ bindings
 
 ### Setup
 
