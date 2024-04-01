@@ -1,4 +1,4 @@
-workspace = { members = [ "blogs-oops", "minigrep", "my_crates","src/tests-example"] }
+workspace = { members = [ "blogs-oops", "minigrep", "my_crates", "server", "src/tests-example"] }
 [package]
 name = "rust-basics"
 version = "0.1.0"

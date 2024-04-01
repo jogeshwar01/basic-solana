@@ -15,7 +15,7 @@ https://doc.rust-lang.org/book/
 7. Packages, Crates (Library/Binary) and Modules
 8. Collections - Vectors, Strings and Hash Maps
 9. Error handling - panic, unwrap, expect, ?, parse
-10. Generics, Traits and Lifetimes
+10. Generics, Traits (Orphan Rule) and Lifetimes
 11. Tests - assert (eq,ne), panic, cargo test commands, unit/integration tests
 12. Minigrep - CLI program - fs module, TDD, env vars, eprintln!
 13. Closures (Memoization Pattern, Capture Environment), Iterators (Adaptor and Consumer functions)
@@ -24,6 +24,13 @@ https://doc.rust-lang.org/book/
 16. Fearless Concurrency - Threads, Message Passing (Channels - mpsc), Sharing state (Mutex, Arc)
 17. Object oriented Programming - Objects, Encapsulation, Inheritance, Trait Objects, State Design Pattern
 18. Patterns and Matching - Refutable/Irrefutable, match, destructure, ignoring with _, range, match guards, @ bindings
+19. Advanced Features -
+
+- Unsafe Rust - Unsafe Blocks/Fns, Raw Pointers, Extern (no_mangle), Static variables (Global), Union
+- Advanced Traits - Associated types, Default Generic Type Parameters and Operator Overloading, Same name trait methods/associated fns, Supertraits, Newtype pattern
+- Advanced types - Type Aliases, Never type, Dynamically Sized Types and Sized Trait
+- Advanced Functions and Closures - Function Pointers, Returning Closures
+- Macros - Declarative and Procedural
 
 ### Setup
 
