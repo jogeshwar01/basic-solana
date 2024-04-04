@@ -23,7 +23,7 @@ https://doc.rust-lang.org/book/
 15. Smart Pointers - Box, Deref, Drop, Reference Counting, Interior Mutability, Reference Cycles (Weak Pointers)
 16. Fearless Concurrency - Threads, Message Passing (Channels - mpsc), Sharing state (Mutex, Arc)
 17. Object oriented Programming - Objects, Encapsulation, Inheritance, Trait Objects, State Design Pattern
-18. Patterns and Matching - Refutable/Irrefutable, match, destructure, ignoring with _, range, match guards, @ bindings
+18. Patterns and Matching - Refutable/Irrefutable, match, destructure, ignoring with \_, range, match guards, @ bindings
 19. Advanced Features -
 
 - Unsafe Rust - Unsafe Blocks/Fns, Raw Pointers, Extern (no_mangle), Static variables (Global), Union
@@ -31,6 +31,12 @@ https://doc.rust-lang.org/book/
 - Advanced types - Type Aliases, Never type, Dynamically Sized Types and Sized Trait
 - Advanced Functions and Closures - Function Pointers, Returning Closures
 - Macros - Declarative and Procedural
+
+20. Project - Web Server
+
+- Single-Threaded HTTP Server - TCP, HTTP, TcpStream, TcpListener, buffer
+- Multi-Threaded HTTP Server - Custom Thread Pools, Workers and Jobs
+- Graceful Shutdown and Cleanup
 
 ### Setup
 
