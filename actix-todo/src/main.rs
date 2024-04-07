@@ -1,13 +1,15 @@
+mod config;
 mod models;
 use crate::models::Status;
 
-use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
+use actix_web::{ web, App, HttpResponse, HttpServer, Responder};
 use std::io;
+use dotenv::dotenv;
 
-#[get("/")]
-async fn hello() -> impl Responder {
-    HttpResponse::Ok().body("Hello world!")
-}
+// #[get("/")]
+// async fn hello() -> impl Responder {
+//     HttpResponse::Ok().body("Hello world!")
+// }
 
 async fn status() -> impl Responder {
     HttpResponse::Ok().json(Status {status: "Ok".to_string()})
@@ -15,12 +17,16 @@ async fn status() -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> io::Result<()> {
+    dotenv().ok();
+    let config = crate::config::Config::from_env().unwrap();
+
+    println!("Starting server at http://{}:{}", config.server.host, config.server.port);
+
     HttpServer::new(|| {
         App::new()
-            .service(hello)
-            .route("/status", web::get().to(status))
+            .route("/", web::get().to(status))  // .service(hello)
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(format!("{}:{}", config.server.host, config.server.port))?
     .run()
     .await
 }
