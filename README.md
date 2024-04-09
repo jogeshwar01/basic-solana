@@ -2,7 +2,9 @@
 
 #### Reference
 
-https://doc.rust-lang.org/book/
+- Rust - https://doc.rust-lang.org/book/
+- Actix - https://actix.rs/docs/
+- Diesel - https://diesel.rs/guides/
 
 ### Concepts
 
@@ -37,6 +39,9 @@ https://doc.rust-lang.org/book/
 - Single-Threaded HTTP Server - TCP, HTTP, TcpStream, TcpListener, buffer
 - Multi-Threaded HTTP Server - Custom Thread Pools, Workers and Jobs
 - Graceful Shutdown and Cleanup
+- Actix Basic Project
+
+21. Diesel Postgres CRUD
 
 ### Setup
 
